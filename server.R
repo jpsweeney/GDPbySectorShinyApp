@@ -10,6 +10,8 @@ library(jsonlite)
 library(lubridate)
 library(grid)
 library(gridExtra)
+library(ggplot2)
+
 setwd("~/Documents/Economics")
 
 ## get nominal GDP data
