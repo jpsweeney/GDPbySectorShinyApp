@@ -17,7 +17,7 @@ The App draws on the BEA's API and new data should be updated soon after new rel
 
 The App has four charts once the user has chosen a sector to view and a number of quarters to see.
 
-1. Nominal Growth: we show the chosen sectors quarterly annualized growth rate in each period. Also shown is a non-nonlinear Loess trend including a confidence interval. Finally, we indicate the chosen sector's share of nominal GDP in the most recent quarter. This inclusion is actually one reason for creating this App. There are many options to view parts of GDP quickly, but getting a sense of how each component affects the overall GDP is difficult, because one must quickly go back and forth between weights or nominal levels and the growth rates. Here we show all this information on the same chart.
+1. Nominal Growth: we show the chosen sector's quarterly annualized growth rate in each period. Also shown is a Loess trend including a confidence interval. Finally, we indicate the chosen sector's share of nominal GDP in the most recent quarter. This inclusion is actually one reason for creating this App. There are many options to view parts of GDP quickly, but getting a sense of how each component affects the overall GDP is difficult, because one must quickly go back and forth between weights or nominal levels and the growth rates. Here we show all this information on the same chart.
 
 2. Real Growth: for the same sector we show the BEA's estimate for real (inflation-adjusted) growth rates using fixed prices. Again we indicate the share of (nominal) GDP in the current quarter. 
 
