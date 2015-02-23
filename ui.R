@@ -1,17 +1,17 @@
-
-library(shiny)
-shinyUI(pageWithSidebar(
-        headerPanel("GDP by Sector"),
-        sidebarPanel(
-                h3('Options'),
-                selectInput(inputId = 'dropbox', label = 'Sector', choices = List),
-                numericInput('id1', 'Quarters', 20, min=0, max=200, step=1),
-                dateInput("date", "Date:")
+shinyUI(
+        pageWithSidebar(
+                headerPanel("Car Selecter"),
                 
+                sidebarPanel(
+                        numericInput('cutoff', 'Minimum MPG', 20, min = 10, max = 35, step = 1),
+                        submitButton('Submit')
                 ),
-        mainPanel(
-                h3('Nominal and Real Growth Rate Charts'),
-                plotOutput("chart"),
-                plotOutput("chart2")
+                mainPanel(
+                        h3('Possible Cars'),
+                        h4('You chose a cutoff of'),
+                        verbatimTextOutput("inputValue"),
+                        h3('Which means the cars in the MPG range you chose are'),
+                        verbatimTextOutput("prediction")
+                        )
                 )
-        ))
+        )
